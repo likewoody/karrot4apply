@@ -3,6 +3,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --experimental-strip-types --test 01-summary-core.test.ts 05-contract-check.test.mjs && python3 04-join-regression.test.py"
+    "test": "node --experimental-strip-types --test settlement-summary.test.ts && python3 revenue-join.test.py"
   }
 }

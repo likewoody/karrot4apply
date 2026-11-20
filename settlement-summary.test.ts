@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { buildSummaryRows, toSummaryRow, totalPayable } from './01-summary-core.ts';
-import type { Statement } from './01-summary-core.ts';
+import { buildSummaryRows, toSummaryRow, totalPayable } from './settlement-summary.ts';
+import type { Statement } from './settlement-summary.ts';
 
 const partner = { id: 'partner-a', name: '예제 A', active: true };
 const statement: Statement = {

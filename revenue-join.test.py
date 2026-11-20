@@ -7,7 +7,7 @@ from pathlib import Path
 class JoinRegressionTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        sql = Path(__file__).with_name('03-join-before-after.sql').read_text()
+        sql = Path(__file__).with_name('revenue-join.sql').read_text()
         with sqlite3.connect(':memory:') as connection:
             rows = connection.execute(sql).fetchall()
         cls.results = {}
